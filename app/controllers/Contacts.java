@@ -1,12 +1,13 @@
 package controllers;
 
-import play.mvc.Controller;
-import play.mvc.Result;
+import play.*;
+import play.mvc.*;
+import views.html.*;
 
 public class Contacts  extends Controller {
 	
 	public static Result index() {
-		return TODO;
+		return ok(index.render("This is a test..."));
 	}
 
 	public static Result create() {
